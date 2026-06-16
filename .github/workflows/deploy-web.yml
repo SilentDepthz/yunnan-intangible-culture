@@ -28,10 +28,16 @@ jobs:
 
       - name: Copy build output to docs/
         run: |
-          # 清理旧构建产物，保留 docs/images/、docs/report-figures/ 等项目文档
-          rm -rf docs/web
-          # 将 build/web 内容铺平到 docs/ 根
-          cp -r build/web/. docs/
+          # 临时保存项目文档
+          mv docs/images /tmp/images 2>/dev/null || true
+          mv docs/report-figures /tmp/report-figures 2>/dev/null || true
+          # 清空 docs/
+          rm -rf docs/*
+          # 恢复项目文档
+          mv /tmp/images docs/images 2>/dev/null || true
+          mv /tmp/report-figures docs/report-figures 2>/dev/null || true
+          # 将 build/web 内容复制到 docs/ 根
+          cp -r build/web/* docs/
           touch docs/.nojekyll
 
       - name: Commit and push docs
