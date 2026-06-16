@@ -1,0 +1,78 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EF"/>
+      <stop offset="1" stop-color="#F2DEC0"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5A2C21"/>
+      <stop offset="1" stop-color="#B7462A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#B7462A"/>
+      <stop offset="1" stop-color="#E3AA61"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6C351F" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#8F3E26"/>
+    </marker>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:42px;font-weight:800;fill:#432116}
+      .subtitle{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:18px;fill:#7B5946}
+      .h{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:25px;font-weight:800;fill:#432116}
+      .h2{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:20px;font-weight:800;fill:#432116}
+      .p{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:16px;fill:#7B5946}
+      .tag{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;font-weight:700;fill:#8F3E26}
+      .white{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:22px;font-weight:800;fill:#fff}
+      .whiteSmall{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#FFE8BF}
+      .num{font-family:Georgia,serif;font-size:35px;font-weight:800;fill:#B7462A}
+    </style>
+  </defs>
+  <rect width="1400" height="900" rx="42" fill="url(#bg)"/>
+  <circle cx="1280" cy="110" r="105" fill="#E7C58D" opacity=".28"/>
+  <circle cx="130" cy="790" r="145" fill="#B7462A" opacity=".07"/>
+  <text x="700" y="74" text-anchor="middle" class="title">互动游戏机制图</text>
+  <text x="700" y="110" text-anchor="middle" class="subtitle">四类小游戏围绕识图、记忆、工艺和地域四种学习目标展开</text>
+  
+  <rect x="520" y="180" width="360" height="120" rx="32" fill="url(#dark)" filter="url(#shadow)"/>
+  <text x="700" y="226" text-anchor="middle" class="white">互动体验中心</text>
+  <text x="700" y="260" text-anchor="middle" class="whiteSmall">文化能量 · 关卡进度 · 连击反馈 · 星级结算</text>
+  <g filter="url(#shadow)">
+    <rect x="105" y="405" width="245" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="227.5" y="447" text-anchor="middle" class="h2">纹样修复局</text>
+    <text x="227.5" y="481" text-anchor="middle" class="p">滑块拼图</text>
+<text x="227.5" y="507" text-anchor="middle" class="p">原图提示</text>
+<text x="227.5" y="533" text-anchor="middle" class="p">星级评价</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="405" y="405" width="245" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="527.5" y="447" text-anchor="middle" class="h2">非遗记忆馆</text>
+    <text x="527.5" y="481" text-anchor="middle" class="p">翻牌配对</text>
+<text x="527.5" y="507" text-anchor="middle" class="p">六组藏品</text>
+<text x="527.5" y="533" text-anchor="middle" class="p">连击加分</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="705" y="405" width="245" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="827.5" y="447" text-anchor="middle" class="h2">匠人工坊</text>
+    <text x="827.5" y="481" text-anchor="middle" class="p">拖拽排序</text>
+<text x="827.5" y="507" text-anchor="middle" class="p">工序复原</text>
+<text x="827.5" y="533" text-anchor="middle" class="p">有限提示</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1005" y="405" width="245" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="1127.5" y="447" text-anchor="middle" class="h2">古道寻踪</text>
+    <text x="1127.5" y="481" text-anchor="middle" class="p">地域线索</text>
+<text x="1127.5" y="507" text-anchor="middle" class="p">体力机制</text>
+<text x="1127.5" y="533" text-anchor="middle" class="p">奖励收集</text>
+  </g>
+  <path d="M610 300L225 400" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M670 300L525 400" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M730 300L825 400" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M790 300L1125 400" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="165" y="665" width="1070" height="78" rx="24" fill="#FFFDF8" stroke="#D7B06E" filter="url(#shadow)"/>
+  <text x="700" y="696" text-anchor="middle" class="h2">学习目标对应关系</text>
+  <text x="700" y="725" text-anchor="middle" class="p">图像识别 → 名称记忆 → 工艺理解 → 地域关联，形成从感知到理解的渐进式学习路径。</text>
+  
+</svg>

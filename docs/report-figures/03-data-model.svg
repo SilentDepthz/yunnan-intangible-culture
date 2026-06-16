@@ -1,0 +1,82 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EF"/>
+      <stop offset="1" stop-color="#F2DEC0"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5A2C21"/>
+      <stop offset="1" stop-color="#B7462A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#B7462A"/>
+      <stop offset="1" stop-color="#E3AA61"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6C351F" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#8F3E26"/>
+    </marker>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:42px;font-weight:800;fill:#432116}
+      .subtitle{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:18px;fill:#7B5946}
+      .h{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:25px;font-weight:800;fill:#432116}
+      .h2{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:20px;font-weight:800;fill:#432116}
+      .p{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:16px;fill:#7B5946}
+      .tag{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;font-weight:700;fill:#8F3E26}
+      .white{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:22px;font-weight:800;fill:#fff}
+      .whiteSmall{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#FFE8BF}
+      .num{font-family:Georgia,serif;font-size:35px;font-weight:800;fill:#B7462A}
+    </style>
+  </defs>
+  <rect width="1400" height="900" rx="42" fill="url(#bg)"/>
+  <circle cx="1280" cy="110" r="105" fill="#E7C58D" opacity=".28"/>
+  <circle cx="130" cy="790" r="145" fill="#B7462A" opacity=".07"/>
+  <text x="700" y="74" text-anchor="middle" class="title">核心数据结构关系图</text>
+  <text x="700" y="110" text-anchor="middle" class="subtitle">mock_data.dart 中非遗项目、区域、传承人、故事和游戏数据的组织关系</text>
+  
+  <g filter="url(#shadow)">
+    <rect x="545" y="170" width="310" height="150" rx="26" fill="url(#dark)" stroke="#D7A55F" stroke-width="1.5"/>
+    <text x="700" y="212" text-anchor="middle" class="white">CultureItem 非遗项目</text>
+    <text x="700" y="246" text-anchor="middle" class="whiteSmall">名称 / 类别 / 地点 / 级别</text>
+<text x="700" y="272" text-anchor="middle" class="whiteSmall">历史价值 / 制作流程</text>
+<text x="700" y="298" text-anchor="middle" class="whiteSmall">图片与传承说明</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="105" y="420" width="260" height="140" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="235" y="462" text-anchor="middle" class="h2">RegionInfo 区域信息</text>
+    <text x="235" y="496" text-anchor="middle" class="p">州市名称</text>
+<text x="235" y="522" text-anchor="middle" class="p">代表项目</text>
+<text x="235" y="548" text-anchor="middle" class="p">文化标签</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="405" y="420" width="260" height="140" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="535" y="462" text-anchor="middle" class="h2">Inheritor 传承人</text>
+    <text x="535" y="496" text-anchor="middle" class="p">人物简介</text>
+<text x="535" y="522" text-anchor="middle" class="p">代表技艺</text>
+<text x="535" y="548" text-anchor="middle" class="p">成就列表</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="735" y="420" width="260" height="140" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="865" y="462" text-anchor="middle" class="h2">Story 非遗故事</text>
+    <text x="865" y="496" text-anchor="middle" class="p">故事标题</text>
+<text x="865" y="522" text-anchor="middle" class="p">图文内容</text>
+<text x="865" y="548" text-anchor="middle" class="p">时间线展示</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1035" y="420" width="260" height="140" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="1165" y="462" text-anchor="middle" class="h2">GameItem 游戏数据</text>
+    <text x="1165" y="496" text-anchor="middle" class="p">游戏入口</text>
+<text x="1165" y="522" text-anchor="middle" class="p">题目/关卡</text>
+<text x="1165" y="548" text-anchor="middle" class="p">奖励反馈</text>
+  </g>
+  <path d="M545 245L370 420" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M635 320L535 418" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M765 320L865 418" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M855 245L1035 420" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="150" y="655" width="1100" height="92" rx="26" fill="#FFFDF8" stroke="#D7B06E" filter="url(#shadow)"/>
+  <text x="700" y="690" text-anchor="middle" class="h2">数据驱动页面展示</text>
+  <text x="700" y="720" text-anchor="middle" class="p">非遗项目是内容核心，地图区域、传承人、故事和互动游戏分别从空间、人物、叙事和体验四个维度补充展示。</text>
+  
+</svg>

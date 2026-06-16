@@ -1,0 +1,80 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EF"/>
+      <stop offset="1" stop-color="#F2DEC0"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5A2C21"/>
+      <stop offset="1" stop-color="#B7462A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#B7462A"/>
+      <stop offset="1" stop-color="#E3AA61"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6C351F" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#8F3E26"/>
+    </marker>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:42px;font-weight:800;fill:#432116}
+      .subtitle{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:18px;fill:#7B5946}
+      .h{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:25px;font-weight:800;fill:#432116}
+      .h2{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:20px;font-weight:800;fill:#432116}
+      .p{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:16px;fill:#7B5946}
+      .tag{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;font-weight:700;fill:#8F3E26}
+      .white{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:22px;font-weight:800;fill:#fff}
+      .whiteSmall{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#FFE8BF}
+      .num{font-family:Georgia,serif;font-size:35px;font-weight:800;fill:#B7462A}
+    </style>
+  </defs>
+  <rect width="1400" height="900" rx="42" fill="url(#bg)"/>
+  <circle cx="1280" cy="110" r="105" fill="#E7C58D" opacity=".28"/>
+  <circle cx="130" cy="790" r="145" fill="#B7462A" opacity=".07"/>
+  <text x="700" y="74" text-anchor="middle" class="title">项目构建与部署流程图</text>
+  <text x="700" y="110" text-anchor="middle" class="subtitle">Flutter 项目从本地开发到 Web 静态资源交付的流程</text>
+  
+  <g filter="url(#shadow)">
+    <rect x="80" y="230" width="220" height="135" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="190" y="272" text-anchor="middle" class="h2">1. 本地开发</text>
+    <text x="190" y="306" text-anchor="middle" class="p">编辑 Dart 页面</text>
+<text x="190" y="332" text-anchor="middle" class="p">维护数据与图片</text>
+<text x="190" y="358" text-anchor="middle" class="p">调试交互效果</text>
+  </g>
+  <path d="M305 298L405 298" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="410" y="230" width="220" height="135" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="520" y="272" text-anchor="middle" class="h2">2. 依赖安装</text>
+    <text x="520" y="306" text-anchor="middle" class="p">flutter pub get</text>
+<text x="520" y="332" text-anchor="middle" class="p">读取 pubspec.yaml</text>
+<text x="520" y="358" text-anchor="middle" class="p">加载 assets</text>
+  </g>
+  <path d="M635 298L735 298" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="740" y="230" width="220" height="135" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="850" y="272" text-anchor="middle" class="h2">3. 代码验证</text>
+    <text x="850" y="306" text-anchor="middle" class="p">dart analyze</text>
+<text x="850" y="332" text-anchor="middle" class="p">dart format</text>
+<text x="850" y="358" text-anchor="middle" class="p">flutter test</text>
+  </g>
+  <path d="M965 298L1065 298" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="1070" y="230" width="220" height="135" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="1180" y="272" text-anchor="middle" class="h2">4. Web 构建</text>
+    <text x="1180" y="306" text-anchor="middle" class="p">flutter build web</text>
+<text x="1180" y="332" text-anchor="middle" class="p">生成 build/web</text>
+<text x="1180" y="358" text-anchor="middle" class="p">静态资源输出</text>
+  </g>
+  <path d="M1180 370V505C1180 540 1145 565 1110 565H290C255 565 220 540 220 505V370" stroke="#8F3E26" stroke-width="4" stroke-dasharray="12 12" marker-end="url(#arrow)" fill="none"/>
+  <g filter="url(#shadow)">
+    <rect x="490" y="535" width="420" height="130" rx="26" fill="url(#dark)" stroke="#D7A55F" stroke-width="1.5"/>
+    <text x="700" y="577" text-anchor="middle" class="white">5. 静态部署</text>
+    <text x="700" y="611" text-anchor="middle" class="whiteSmall">将 build/web 部署到服务器、校园平台或静态托管服务</text>
+<text x="700" y="637" text-anchor="middle" class="whiteSmall">用户通过浏览器访问，无需后端服务</text>
+  </g>
+  <rect x="210" y="735" width="980" height="64" rx="22" fill="#FFF5E5" stroke="#D7B06E"/>
+  <text x="700" y="776" text-anchor="middle" class="p">交付特点：项目可以作为 Flutter Web 静态站点提交，适合课程展示、答辩演示和后续在线部署。</text>
+  
+</svg>

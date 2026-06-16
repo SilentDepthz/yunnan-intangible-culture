@@ -1,0 +1,60 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="620"><stop stop-color="#FFF9EF"/><stop offset="1" stop-color="#F3DFC0"/></linearGradient>
+    <linearGradient id="ribbon" x1="88" y1="104" x2="1112" y2="500"><stop stop-color="#8D3D28"/><stop offset=".52" stop-color="#C15935"/><stop offset="1" stop-color="#5B2B20"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#6C351F" flood-opacity=".16"/></filter>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:34px;font-weight:800;fill:#4B2419}
+      .sub{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#7B5946}
+      .step{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:21px;font-weight:800;fill:#4B2419}
+      .desc{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:14px;fill:#6C4D3B}
+      .num{font-family:Georgia,serif;font-size:25px;font-weight:800;fill:#fff}
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="34" fill="url(#bg)"/>
+  <text x="600" y="72" text-anchor="middle" class="title">用户文化探索旅程</text>
+  <text x="600" y="102" text-anchor="middle" class="sub">从首页认知到地图探索，再进入深度阅读与游戏化学习</text>
+
+  <path d="M120 356C246 198 384 198 506 330C632 466 754 452 874 312C948 225 1032 214 1100 260" stroke="url(#ribbon)" stroke-width="22" stroke-linecap="round" opacity=".9"/>
+  <path d="M120 356C246 198 384 198 506 330C632 466 754 452 874 312C948 225 1032 214 1100 260" stroke="#FFE7BA" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="378" width="200" height="132" rx="24" fill="#FFFDF8" stroke="#D7B06E"/>
+    <circle cx="112" cy="412" r="25" fill="#7E3525"/><text x="112" y="421" text-anchor="middle" class="num">1</text>
+    <text x="170" y="414" text-anchor="middle" class="step">初识平台</text>
+    <text x="170" y="448" text-anchor="middle" class="desc">首页主题视觉</text>
+    <text x="170" y="474" text-anchor="middle" class="desc">推荐轮播与数据概览</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="274" y="118" width="200" height="132" rx="24" fill="#FFFDF8" stroke="#D7B06E"/>
+    <circle cx="316" cy="152" r="25" fill="#9C3F26"/><text x="316" y="161" text-anchor="middle" class="num">2</text>
+    <text x="374" y="154" text-anchor="middle" class="step">地图探索</text>
+    <text x="374" y="188" text-anchor="middle" class="desc">点击云南州市</text>
+    <text x="374" y="214" text-anchor="middle" class="desc">查看区域非遗信息</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="500" y="356" width="200" height="132" rx="24" fill="#FFFDF8" stroke="#D7B06E"/>
+    <circle cx="542" cy="390" r="25" fill="#B7462A"/><text x="542" y="399" text-anchor="middle" class="num">3</text>
+    <text x="600" y="392" text-anchor="middle" class="step">项目检索</text>
+    <text x="600" y="426" text-anchor="middle" class="desc">分类筛选与搜索</text>
+    <text x="600" y="452" text-anchor="middle" class="desc">打开详情理解工艺</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="724" y="118" width="200" height="132" rx="24" fill="#FFFDF8" stroke="#D7B06E"/>
+    <circle cx="766" cy="152" r="25" fill="#8D3D28"/><text x="766" y="161" text-anchor="middle" class="num">4</text>
+    <text x="824" y="154" text-anchor="middle" class="step">故事阅读</text>
+    <text x="824" y="188" text-anchor="middle" class="desc">传承人资料</text>
+    <text x="824" y="214" text-anchor="middle" class="desc">非遗故事时间线</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="930" y="288" width="200" height="132" rx="24" fill="#FFFDF8" stroke="#D7B06E"/>
+    <circle cx="972" cy="322" r="25" fill="#5B2B20"/><text x="972" y="331" text-anchor="middle" class="num">5</text>
+    <text x="1030" y="324" text-anchor="middle" class="step">互动学习</text>
+    <text x="1030" y="358" text-anchor="middle" class="desc">完成小游戏挑战</text>
+    <text x="1030" y="384" text-anchor="middle" class="desc">获得结算反馈</text>
+  </g>
+</svg>

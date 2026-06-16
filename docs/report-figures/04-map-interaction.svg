@@ -1,0 +1,79 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9EF"/>
+      <stop offset="1" stop-color="#F2DEC0"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5A2C21"/>
+      <stop offset="1" stop-color="#B7462A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#B7462A"/>
+      <stop offset="1" stop-color="#E3AA61"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#6C351F" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M2 2L10 6L2 10Z" fill="#8F3E26"/>
+    </marker>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:42px;font-weight:800;fill:#432116}
+      .subtitle{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:18px;fill:#7B5946}
+      .h{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:25px;font-weight:800;fill:#432116}
+      .h2{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:20px;font-weight:800;fill:#432116}
+      .p{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:16px;fill:#7B5946}
+      .tag{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;font-weight:700;fill:#8F3E26}
+      .white{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:22px;font-weight:800;fill:#fff}
+      .whiteSmall{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#FFE8BF}
+      .num{font-family:Georgia,serif;font-size:35px;font-weight:800;fill:#B7462A}
+    </style>
+  </defs>
+  <rect width="1400" height="900" rx="42" fill="url(#bg)"/>
+  <circle cx="1280" cy="110" r="105" fill="#E7C58D" opacity=".28"/>
+  <circle cx="130" cy="790" r="145" fill="#B7462A" opacity=".07"/>
+  <text x="700" y="74" text-anchor="middle" class="title">地图交互流程图</text>
+  <text x="700" y="110" text-anchor="middle" class="subtitle">云南州市 GeoJSON 加载、区域点击识别与非遗信息面板联动</text>
+  
+  <g filter="url(#shadow)">
+    <rect x="80" y="210" width="230" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="195" y="252" text-anchor="middle" class="h2">1. 获取边界</text>
+    <text x="195" y="286" text-anchor="middle" class="p">请求阿里云 DataV</text>
+<text x="195" y="312" text-anchor="middle" class="p">云南州市 GeoJSON</text>
+<text x="195" y="338" text-anchor="middle" class="p">网络数据入口</text>
+  </g>
+  <path d="M315 285L405 285" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="410" y="210" width="230" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="525" y="252" text-anchor="middle" class="h2">2. 绘制地图</text>
+    <text x="525" y="286" text-anchor="middle" class="p">解析多边形坐标</text>
+<text x="525" y="312" text-anchor="middle" class="p">缩放到画布范围</text>
+<text x="525" y="338" text-anchor="middle" class="p">绘制州市轮廓</text>
+  </g>
+  <path d="M645 285L735 285" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="740" y="210" width="230" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="855" y="252" text-anchor="middle" class="h2">3. 点击识别</text>
+    <text x="855" y="286" text-anchor="middle" class="p">监听用户点击</text>
+<text x="855" y="312" text-anchor="middle" class="p">判断命中区域</text>
+<text x="855" y="338" text-anchor="middle" class="p">更新选中状态</text>
+  </g>
+  <path d="M975 285L1065 285" stroke="#8F3E26" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="1070" y="210" width="230" height="150" rx="26" fill="#FFFDF8" stroke="#D7B06E" stroke-width="1.5"/>
+    <text x="1185" y="252" text-anchor="middle" class="h2">4. 信息联动</text>
+    <text x="1185" y="286" text-anchor="middle" class="p">匹配 RegionInfo</text>
+<text x="1185" y="312" text-anchor="middle" class="p">筛选相关项目</text>
+<text x="1185" y="338" text-anchor="middle" class="p">展示详情面板</text>
+  </g>
+  <path d="M1190 368C1110 510 895 540 700 540C505 540 290 510 210 368" stroke="#8F3E26" stroke-width="4" stroke-dasharray="12 12" marker-end="url(#arrow)" fill="none"/>
+  <g filter="url(#shadow)">
+    <rect x="430" y="540" width="540" height="115" rx="26" fill="url(#dark)" stroke="#D7A55F" stroke-width="1.5"/>
+    <text x="700" y="582" text-anchor="middle" class="white">容错机制</text>
+    <text x="700" y="616" text-anchor="middle" class="whiteSmall">GeoJSON 请求失败时启用本地备用地图组件，保证页面结构和浏览体验完整。</text>
+  </g>
+  <rect x="200" y="725" width="1000" height="66" rx="22" fill="#FFF5E5" stroke="#D7B06E"/>
+  <text x="700" y="767" text-anchor="middle" class="p">交互价值：把非遗项目从列表信息转化为可点击、可定位、可比较的地域文化信息。</text>
+  
+</svg>

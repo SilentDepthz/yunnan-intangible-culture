@@ -1,0 +1,55 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="560"><stop stop-color="#FFF9EF"/><stop offset="1" stop-color="#F1DEC0"/></linearGradient>
+    <linearGradient id="bar" x1="230" y1="0" x2="1010" y2="0"><stop stop-color="#B7462A"/><stop offset="1" stop-color="#E2A65F"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#6C351F" flood-opacity=".14"/></filter>
+    <style>
+      .title{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:34px;font-weight:800;fill:#4B2419}
+      .sub{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:15px;fill:#7B5946}
+      .label{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:18px;font-weight:800;fill:#4B2419}
+      .value{font-family:Georgia,serif;font-size:20px;font-weight:800;fill:#8F3E26}
+      .axis{font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:12px;fill:#8C6E5A}
+    </style>
+  </defs>
+  <rect width="1200" height="560" rx="34" fill="url(#bg)"/>
+  <text x="600" y="62" text-anchor="middle" class="title">非遗项目类别分布</text>
+  <text x="600" y="92" text-anchor="middle" class="sub">当前内容库覆盖传统技艺、音乐、舞蹈、戏剧、美术与民俗，后续可继续扩展权威数据</text>
+  <g filter="url(#shadow)">
+    <rect x="120" y="126" width="960" height="352" rx="28" fill="#FFFDF8" stroke="#D7B06E"/>
+    <line x1="274" y1="422" x2="1000" y2="422" stroke="#E5CC9E"/>
+    <text x="274" y="448" text-anchor="middle" class="axis">0</text>
+    <text x="456" y="448" text-anchor="middle" class="axis">2</text>
+    <text x="638" y="448" text-anchor="middle" class="axis">4</text>
+    <text x="820" y="448" text-anchor="middle" class="axis">6</text>
+    <text x="1000" y="448" text-anchor="middle" class="axis">8</text>
+    <line x1="456" y1="156" x2="456" y2="422" stroke="#F0DEC0" stroke-dasharray="6 8"/>
+    <line x1="638" y1="156" x2="638" y2="422" stroke="#F0DEC0" stroke-dasharray="6 8"/>
+    <line x1="820" y1="156" x2="820" y2="422" stroke="#F0DEC0" stroke-dasharray="6 8"/>
+    <line x1="1000" y1="156" x2="1000" y2="422" stroke="#F0DEC0" stroke-dasharray="6 8"/>
+
+    <text x="210" y="181" text-anchor="end" class="label">传统技艺</text>
+    <rect x="274" y="158" width="726" height="32" rx="16" fill="url(#bar)"/>
+    <text x="1026" y="181" class="value">8</text>
+
+    <text x="210" y="231" text-anchor="end" class="label">传统音乐</text>
+    <rect x="274" y="208" width="182" height="32" rx="16" fill="url(#bar)" opacity=".86"/>
+    <text x="482" y="231" class="value">2</text>
+
+    <text x="210" y="281" text-anchor="end" class="label">传统舞蹈</text>
+    <rect x="274" y="258" width="182" height="32" rx="16" fill="url(#bar)" opacity=".86"/>
+    <text x="482" y="281" class="value">2</text>
+
+    <text x="210" y="331" text-anchor="end" class="label">传统戏剧</text>
+    <rect x="274" y="308" width="182" height="32" rx="16" fill="url(#bar)" opacity=".86"/>
+    <text x="482" y="331" class="value">2</text>
+
+    <text x="210" y="381" text-anchor="end" class="label">传统美术</text>
+    <rect x="274" y="358" width="91" height="32" rx="16" fill="url(#bar)" opacity=".72"/>
+    <text x="391" y="381" class="value">1</text>
+
+    <text x="540" y="381" text-anchor="end" class="label">民俗</text>
+    <rect x="574" y="358" width="91" height="32" rx="16" fill="url(#bar)" opacity=".72"/>
+    <text x="691" y="381" class="value">1</text>
+  </g>
+  <text x="600" y="516" text-anchor="middle" class="sub">说明：图表基于项目当前 mock_data.dart 内容整理，适合作为课程作品数据规模说明。</text>
+</svg>
