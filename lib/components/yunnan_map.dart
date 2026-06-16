@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../data/mock_data.dart';
+import '../data/yunnan_geo_data.dart';
 import '../widgets/yunnan_administrative_map.dart';
 
 class MapPrefecture {
@@ -36,8 +36,7 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
 
   Future<void> _fetchMapData() async {
     try {
-      final jsonString = await rootBundle.loadString('assets/data/yunnan_geo.json');
-      final parsed = _parseGeoJson(jsonDecode(jsonString));
+      final parsed = _parseGeoJson(jsonDecode(kYunnanGeoJson));
       if (parsed.isEmpty) throw Exception('地图数据为空');
       if (!mounted) return;
       setState(() {
