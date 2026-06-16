@@ -25,6 +25,7 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
   List<MapPrefecture> _prefectures = [];
   RegionInfo? _selectedRegion;
   bool _isLoading = true;
+  bool _usingFallback = false;
 
   @override
   void initState() {
@@ -177,11 +178,13 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
             Expanded(
               child: _isLoading
                   ? const Center(child: CircularProgressIndicator())
-                  : _GeoPrefectureMap(
-                      prefectures: _prefectures,
-                      selectedName: _selectedRegion?.name,
-                      onSelected: _selectByName,
-                    ),
+                  : _usingFallback
+                      ? YunnanAdministrativeMap(onRegionTap: _selectByName)
+                      : _GeoPrefectureMap(
+                          prefectures: _prefectures,
+                          selectedName: _selectedRegion?.name,
+                          onSelected: _selectByName,
+                        ),
             ),
           ],
         ),
