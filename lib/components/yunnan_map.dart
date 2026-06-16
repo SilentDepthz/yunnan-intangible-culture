@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
 
 import '../data/mock_data.dart';
 import '../widgets/yunnan_administrative_map.dart';
@@ -25,7 +25,6 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
   List<MapPrefecture> _prefectures = [];
   RegionInfo? _selectedRegion;
   bool _isLoading = true;
-  bool _usingFallback = false;
 
   @override
   void initState() {
@@ -36,13 +35,8 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
 
   Future<void> _fetchMapData() async {
     try {
-      final response = await http.get(
-        Uri.parse(
-          'https://geo.datav.aliyun.com/areas_v3/bound/530000_full.json',
-        ),
-      );
-      if (response.statusCode != 200) throw Exception('地图数据请求失败');
-      final parsed = _parseGeoJson(jsonDecode(response.body));
+      final jsonString = await rootBundle.loadString('assets/data/yunnan_geo.json');
+      final parsed = _parseGeoJson(jsonDecode(jsonString));
       if (parsed.isEmpty) throw Exception('地图数据为空');
       if (!mounted) return;
       setState(() {
@@ -175,8 +169,6 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
-                if (_usingFallback)
-                  const Text('离线地图', style: TextStyle(fontSize: 12)),
               ],
             ),
             const SizedBox(height: 4),
@@ -185,8 +177,6 @@ class _YunnanMapWidgetState extends State<YunnanMapWidget> {
             Expanded(
               child: _isLoading
                   ? const Center(child: CircularProgressIndicator())
-                  : _usingFallback
-                  ? YunnanAdministrativeMap(onRegionTap: _selectByName)
                   : _GeoPrefectureMap(
                       prefectures: _prefectures,
                       selectedName: _selectedRegion?.name,
